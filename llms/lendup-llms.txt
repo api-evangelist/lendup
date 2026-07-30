@@ -1,0 +1,38 @@
+# LendUp
+
+> LendUp was a San Francisco fintech lender (2011–2022) backed by GV and QED Investors that offered
+> single-payment and installment loans to subprime borrowers alongside a gamified "LendUp Ladder"
+> credit-building program. LendUp Loans LLC ceased lending operations in January 2022 following
+> Consumer Financial Protection Bureau enforcement over misleading marketing and pricing claims.
+> The lendup.com domain is now operated by an unrelated entity, LendUp LLC of Dover, Delaware, which
+> runs a consumer loan-matching and financial-education site. Neither entity publishes a public API,
+> developer portal, SDKs, or any machine-readable discovery surface.
+
+## Status
+
+- The original LendUp fintech is defunct; there is no developer program to integrate with.
+- The current lendup.com operator states it has no corporate, ownership, or operational relationship
+  to the former lender and no access to the former lender's customer data.
+- No API, OpenAPI/AsyncAPI specification, SDK, CLI, MCP server, or /.well-known/ surface was found.
+
+## Current site (LendUp LLC, loan-matching service)
+
+- [Website](https://www.lendup.com/): Consumer loan-matching front door.
+- [About](https://www.lendup.com/about/): Operating entity, and its disclaimer regarding the former lender.
+- [How LendUp Works](https://www.lendup.com/how-lendup-works/): Loan-matching process for borrowers.
+- [Security](https://www.lendup.com/security/): Consumer data-protection and scam-awareness guidance.
+- [Contact](https://www.lendup.com/contact/): Support channel.
+- [Terms of Use](https://www.lendup.com/terms/)
+- [Privacy Policy](https://www.lendup.com/privacy/)
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/lendup/refs/heads/main/apis.yml): APIs.json profile for this company.
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/lendup/refs/heads/main/security/lendup-domain-security.yml): Probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture.
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/lendup/refs/heads/main/well-known/lendup-well-known.yml): Record of the absent /.well-known/ discovery surface.
+
+## Notes for agents
+
+- Do not attempt to construct API calls against lendup.com; no programmatic interface is published.
+- Any historical reference to a "LendUp API" refers to the defunct pre-2022 lender and is not actionable.
+- Treat the current site as a lead-generation and content property, not as an API provider.

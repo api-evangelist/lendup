@@ -1,0 +1,34 @@
+generated: '2026-07-19'
+method: searched
+source: live HTTPS probes of https://www.lendup.com/.well-known/*
+host: https://www.lendup.com
+notes: >-
+  No /.well-known/ discovery surface is published. Every RFC-defined document
+  probed returned 404. This is an expected result: lendup.com no longer hosts a
+  technology company or an API — the domain is operated by an unrelated
+  loan-matching entity (LendUp LLC, Dover, DE) after the original LendUp Loans
+  LLC ceased lending operations in January 2022. Recorded as evidence of
+  absence, not as a discovery surface; no WellKnown or SecurityTxt pointer is
+  wired in apis.yml because no document was found.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+other_probes:
+- path: /llms.txt
+  status: 404
+- path: /developers/
+  status: 404
+- path: /api/
+  status: 404
+- path: /robots.txt
+  status: 200
+- path: /sitemap.xml
+  status: 200
