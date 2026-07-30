@@ -1,8 +1,28 @@
 aid: lendup
 name: LendUp
-description: 'LendUp is a company surfaced as a portfolio company of gv, qed-investors and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  LendUp was a San Francisco consumer-lending fintech founded in 2011 and backed by GV and QED
+  Investors, offering single-payment and installment loans to subprime borrowers alongside a gamified
+  "LendUp Ladder" program that promised cheaper credit and credit-bureau reporting as borrowers repaid.
+  LendUp Loans LLC ceased lending operations in January 2022 following Consumer Financial Protection
+  Bureau enforcement actions over misleading marketing and pricing claims. The lendup.com domain is
+  now operated by an unrelated company, LendUp LLC of Dover, Delaware, which runs a consumer
+  loan-matching and financial-education site connecting borrowers to licensed lenders for a referral
+  fee; it states it has no corporate, ownership, or operational relationship to the former lender and
+  no access to its customer data. Neither entity publishes a public API, developer portal, SDKs, or
+  any machine-readable discovery surface.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lendup.png
 url: https://raw.githubusercontent.com/api-evangelist/lendup/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,24 @@ x-backed-by:
 - qed-investors
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-detail: >-
+  LendUp Loans LLC ceased lending operations in January 2022 after CFPB enforcement. The lendup.com
+  domain is now operated by an unrelated entity, LendUp LLC (Dover, DE), as a loan-matching service.
+  No API or developer surface exists for either entity.
+x-domain-operator: LendUp LLC, 8 The Green STE A, Dover, DE 19901 (unrelated successor operator of lendup.com)
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Consumer Lending
+- Fintech
+- Financial Services
+- Personal Loans
+- Lead Generation
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +57,21 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://lendup.com
+  url: https://www.lendup.com/
+- type: About
+  url: https://www.lendup.com/about/
+- type: Support
+  url: https://www.lendup.com/contact/
+- type: TermsOfService
+  url: https://www.lendup.com/terms/
+- type: PrivacyPolicy
+  url: https://www.lendup.com/privacy/
+- type: DomainSecurity
+  url: security/lendup-domain-security.yml
+- type: LLMsTxt
+  url: llms/lendup-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
