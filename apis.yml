@@ -37,7 +37,7 @@ x-status-detail: >-
   domain is now operated by an unrelated entity, LendUp LLC (Dover, DE), as a loan-matching service.
   No API or developer surface exists for either entity.
 x-domain-operator: LendUp LLC, 8 The Green STE A, Dover, DE 19901 (unrelated successor operator of lendup.com)
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
